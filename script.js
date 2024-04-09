@@ -9,6 +9,8 @@ function fetchData() {
     .catch(error => console.error('Erro ao recuperar os dados:', error));
 }
 
+
+
 function processarAlunos(data, tipo, alunos) {
   const nomeIndex = 0;
   const pontuacaoIndex = tipo === 1 ? 1 : 2; // 1 para Teórico, 2 para Prático
