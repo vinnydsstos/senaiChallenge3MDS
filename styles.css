@@ -1,0 +1,61 @@
+body {
+  padding: 20px;
+  background-color: #fff; /* Fundo branco */
+  color: #000; /* Texto preto */
+}
+.container-fluid {
+  /* Remova o background cinza */
+  background-color: transparent;
+  text-align: center; /* Centraliza o conteúdo */
+}
+#header {
+  margin-bottom: 20px;
+}
+#header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+#header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  margin-top: 0;
+  color: #868e96; /* Cor cinza escuro para o subtítulo */
+}
+#vagasList {
+  height: 70vh;
+  overflow-y: auto;
+}
+.list-group-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.list-group-item:hover {
+  background-color: #f8d7da;
+}
+#footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #868e96;
+}
+#senaiChallengeBG {
+  background-color: #fff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+}
