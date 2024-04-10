@@ -3,7 +3,7 @@ const alunosPratico = [];
 const grupos = {};
 
 function fetchData() {
-  fetch('https://sheets.googleapis.com/v4/spreadsheets/1wjSp9kOEwOn4hPg0Px1psUjfC2-yg38OuQXrXRvNrIo/values/grupos!A1:Z200?majorDimension=ROWS&key=AIzaSyAVbkJxfxctVsI0DxtReILS3MYZaTxWoUw')
+  fetch('https://sheets.googleapis.com/v4/spreadsheets/1OpGYiEPbG_2_M3CKBnUjVLMkFSBWvuq8MxbMGXRnMNE/values/grupos!A1:Z200?majorDimension=ROWS&key=AIzaSyAVbkJxfxctVsI0DxtReILS3MYZaTxWoUw')
     .then(response => response.json())
     .then(data => {  processarAlunos(data.values, 1, alunosTeorico); processarAlunos(data.values, 2, alunosPratico); processarGrupos(data.values)})
     .catch(error => console.error('Erro ao recuperar os dados:', error));
